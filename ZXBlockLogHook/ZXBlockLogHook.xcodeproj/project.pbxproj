@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7443F8772293CDCE000AF3CC /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7443F8762293CDCE000AF3CC /* MDConfig.plist */; };
+		7443F8812293CDCF000AF3CC /* libZXBlockLogHookDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7443F8802293CDCF000AF3CC /* libZXBlockLogHookDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		7443F8862293CDCF000AF3CC /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7443F8852293CDCF000AF3CC /* JavaScriptCore.framework */; };
+		7443F8882293CDCF000AF3CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7443F8872293CDCF000AF3CC /* Foundation.framework */; };
+		7443F88A2293CDCF000AF3CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7443F8892293CDCF000AF3CC /* UIKit.framework */; };
+		7443F88F2293CDD0000AF3CC /* ZXBlockLogHookDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7443F88E2293CDCF000AF3CC /* ZXBlockLogHookDylib.mm */; };
+		7443F8922293CDD0000AF3CC /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7443F8912293CDD0000AF3CC /* MDConfigManager.h */; };
+		7443F8942293CDD0000AF3CC /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7443F8932293CDD0000AF3CC /* MDConfigManager.m */; };
+		7443F8962293CDD0000AF3CC /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7443F8952293CDD0000AF3CC /* MDCycriptManager.h */; };
+		7443F8982293CDD0000AF3CC /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7443F8972293CDD0000AF3CC /* MDCycriptManager.m */; };
+		7443F89A2293CDD0000AF3CC /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 7443F8992293CDD0000AF3CC /* MDMethodTrace.h */; };
+		7443F89C2293CDD0000AF3CC /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 7443F89B2293CDD0000AF3CC /* MDMethodTrace.m */; };
+		7443F89E2293CDD0000AF3CC /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 7443F89D2293CDD0000AF3CC /* ANYMethodLog.h */; };
+		7443F8A02293CDD0000AF3CC /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7443F89F2293CDD0000AF3CC /* ANYMethodLog.m */; };
+		7443F8A32293CDD0000AF3CC /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 7443F8A22293CDD0000AF3CC /* LLDBTools.h */; };
+		7443F8A52293CDD0000AF3CC /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7443F8A42293CDD0000AF3CC /* LLDBTools.mm */; };
+		7443F8AA2293CDD0000AF3CC /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 7443F8A92293CDD0000AF3CC /* AntiAntiDebug.m */; };
+		7443F8AD2293CDD0000AF3CC /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 7443F8AC2293CDD0000AF3CC /* fishhook.c */; };
+		7443F8AF2293CDD0000AF3CC /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 7443F8AE2293CDD0000AF3CC /* fishhook.h */; };
+		7443F8B12293CDD0000AF3CC /* ZXBlockLogHookDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 7443F8B02293CDD0000AF3CC /* ZXBlockLogHookDylib.h */; };
+		7443F8B32293CDD0000AF3CC /* ZXBlockLogHookDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 7443F8B22293CDD0000AF3CC /* ZXBlockLogHookDylib.m */; };
+		7443F8C52293CE60000AF3CC /* ZXBlockLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7443F8BD2293CE5F000AF3CC /* ZXBlockLog.m */; };
+		7443F8C62293CE60000AF3CC /* CTBlockDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 7443F8BE2293CE5F000AF3CC /* CTBlockDescription.m */; };
+		7443F8C72293CE60000AF3CC /* ZXBlockLogTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 7443F8BF2293CE5F000AF3CC /* ZXBlockLogTool.h */; };
+		7443F8C82293CE60000AF3CC /* ZXBlockLogResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 7443F8C02293CE5F000AF3CC /* ZXBlockLogResult.h */; };
+		7443F8C92293CE60000AF3CC /* CTBlockDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 7443F8C12293CE5F000AF3CC /* CTBlockDescription.h */; };
+		7443F8CA2293CE60000AF3CC /* ZXBlockLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 7443F8C22293CE5F000AF3CC /* ZXBlockLog.h */; };
+		7443F8CB2293CE60000AF3CC /* ZXBlockLogTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7443F8C32293CE5F000AF3CC /* ZXBlockLogTool.m */; };
+		7443F8CC2293CE60000AF3CC /* ZXBlockLogResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 7443F8C42293CE5F000AF3CC /* ZXBlockLogResult.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7443F8822293CDCF000AF3CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7443F8632293CDCE000AF3CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7443F87F2293CDCF000AF3CC;
+			remoteInfo = ZXBlockLogHookDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7443F86B2293CDCE000AF3CC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7443F8812293CDCF000AF3CC /* libZXBlockLogHookDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7443F86E2293CDCE000AF3CC /* ZXBlockLogHook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXBlockLogHook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7443F8712293CDCE000AF3CC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		7443F8722293CDCE000AF3CC /* Target.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Target.plist; sourceTree = "<group>"; };
+		7443F8742293CDCE000AF3CC /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
+		7443F8762293CDCE000AF3CC /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MDConfig.plist; path = Config/MDConfig.plist; sourceTree = "<group>"; };
+		7443F8792293CDCE000AF3CC /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		7443F87A2293CDCE000AF3CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7443F8802293CDCF000AF3CC /* libZXBlockLogHookDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libZXBlockLogHookDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		7443F8852293CDCF000AF3CC /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		7443F8872293CDCF000AF3CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7443F8892293CDCF000AF3CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7443F88D2293CDCF000AF3CC /* ZXBlockLogHookDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; name = ZXBlockLogHookDylib.xm; path = Logos/ZXBlockLogHookDylib.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		7443F88E2293CDCF000AF3CC /* ZXBlockLogHookDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = ZXBlockLogHookDylib.mm; path = Logos/ZXBlockLogHookDylib.mm; sourceTree = "<group>"; };
+		7443F8912293CDD0000AF3CC /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDConfigManager.h; path = Config/MDConfigManager.h; sourceTree = "<group>"; };
+		7443F8932293CDD0000AF3CC /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDConfigManager.m; path = Config/MDConfigManager.m; sourceTree = "<group>"; };
+		7443F8952293CDD0000AF3CC /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDCycriptManager.h; path = Config/MDCycriptManager.h; sourceTree = "<group>"; };
+		7443F8972293CDD0000AF3CC /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDCycriptManager.m; path = Config/MDCycriptManager.m; sourceTree = "<group>"; };
+		7443F8992293CDD0000AF3CC /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDMethodTrace.h; path = Config/MDMethodTrace.h; sourceTree = "<group>"; };
+		7443F89B2293CDD0000AF3CC /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDMethodTrace.m; path = Config/MDMethodTrace.m; sourceTree = "<group>"; };
+		7443F89D2293CDD0000AF3CC /* ANYMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ANYMethodLog.h; path = Config/ANYMethodLog.h; sourceTree = "<group>"; };
+		7443F89F2293CDD0000AF3CC /* ANYMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ANYMethodLog.m; path = Config/ANYMethodLog.m; sourceTree = "<group>"; };
+		7443F8A22293CDD0000AF3CC /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
+		7443F8A42293CDD0000AF3CC /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
+		7443F8A72293CDD0000AF3CC /* ZXBlockLogHookDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZXBlockLogHookDylib-Prefix.pch"; sourceTree = "<group>"; };
+		7443F8A92293CDD0000AF3CC /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		7443F8AC2293CDD0000AF3CC /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		7443F8AE2293CDD0000AF3CC /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		7443F8B02293CDD0000AF3CC /* ZXBlockLogHookDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXBlockLogHookDylib.h; sourceTree = "<group>"; };
+		7443F8B22293CDD0000AF3CC /* ZXBlockLogHookDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXBlockLogHookDylib.m; sourceTree = "<group>"; };
+		7443F8BD2293CE5F000AF3CC /* ZXBlockLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXBlockLog.m; sourceTree = "<group>"; };
+		7443F8BE2293CE5F000AF3CC /* CTBlockDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTBlockDescription.m; sourceTree = "<group>"; };
+		7443F8BF2293CE5F000AF3CC /* ZXBlockLogTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXBlockLogTool.h; sourceTree = "<group>"; };
+		7443F8C02293CE5F000AF3CC /* ZXBlockLogResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXBlockLogResult.h; sourceTree = "<group>"; };
+		7443F8C12293CE5F000AF3CC /* CTBlockDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTBlockDescription.h; sourceTree = "<group>"; };
+		7443F8C22293CE5F000AF3CC /* ZXBlockLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXBlockLog.h; sourceTree = "<group>"; };
+		7443F8C32293CE5F000AF3CC /* ZXBlockLogTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXBlockLogTool.m; sourceTree = "<group>"; };
+		7443F8C42293CE5F000AF3CC /* ZXBlockLogResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXBlockLogResult.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7443F8682293CDCE000AF3CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7443F87D2293CDCF000AF3CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7443F8862293CDCF000AF3CC /* JavaScriptCore.framework in Frameworks */,
+				7443F88A2293CDCF000AF3CC /* UIKit.framework in Frameworks */,
+				7443F8882293CDCF000AF3CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7443F8622293CDCE000AF3CC = {
+			isa = PBXGroup;
+			children = (
+				7443F8702293CDCE000AF3CC /* ZXBlockLogHook */,
+				7443F88B2293CDCF000AF3CC /* ZXBlockLogHookDylib */,
+				7443F8842293CDCF000AF3CC /* Frameworks */,
+				7443F86F2293CDCE000AF3CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7443F86F2293CDCE000AF3CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7443F86E2293CDCE000AF3CC /* ZXBlockLogHook.app */,
+				7443F8802293CDCF000AF3CC /* libZXBlockLogHookDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7443F8702293CDCE000AF3CC /* ZXBlockLogHook */ = {
+			isa = PBXGroup;
+			children = (
+				7443F8712293CDCE000AF3CC /* icon.png */,
+				7443F8722293CDCE000AF3CC /* Target.plist */,
+				7443F87A2293CDCE000AF3CC /* Info.plist */,
+				7443F8732293CDCE000AF3CC /* Scripts */,
+				7443F8752293CDCE000AF3CC /* Config */,
+				7443F8782293CDCE000AF3CC /* TargetApp */,
+			);
+			path = ZXBlockLogHook;
+			sourceTree = "<group>";
+		};
+		7443F8732293CDCE000AF3CC /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				7443F8742293CDCE000AF3CC /* quick-resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		7443F8752293CDCE000AF3CC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				7443F8762293CDCE000AF3CC /* MDConfig.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		7443F8782293CDCE000AF3CC /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				7443F8792293CDCE000AF3CC /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		7443F8842293CDCF000AF3CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7443F8852293CDCF000AF3CC /* JavaScriptCore.framework */,
+				7443F8872293CDCF000AF3CC /* Foundation.framework */,
+				7443F8892293CDCF000AF3CC /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7443F88B2293CDCF000AF3CC /* ZXBlockLogHookDylib */ = {
+			isa = PBXGroup;
+			children = (
+				7443F8B02293CDD0000AF3CC /* ZXBlockLogHookDylib.h */,
+				7443F8B22293CDD0000AF3CC /* ZXBlockLogHookDylib.m */,
+				7443F88C2293CDCF000AF3CC /* Logos */,
+				7443F8902293CDD0000AF3CC /* Config */,
+				7443F8A12293CDD0000AF3CC /* Tools */,
+				7443F8A82293CDD0000AF3CC /* AntiAntiDebug */,
+				7443F8AB2293CDD0000AF3CC /* fishhook */,
+				7443F8A62293CDD0000AF3CC /* Supporting Files */,
+			);
+			path = ZXBlockLogHookDylib;
+			sourceTree = "<group>";
+		};
+		7443F88C2293CDCF000AF3CC /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				7443F8BC2293CE5F000AF3CC /* ZXBlockLog */,
+				7443F88D2293CDCF000AF3CC /* ZXBlockLogHookDylib.xm */,
+				7443F88E2293CDCF000AF3CC /* ZXBlockLogHookDylib.mm */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		7443F8902293CDD0000AF3CC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				7443F8912293CDD0000AF3CC /* MDConfigManager.h */,
+				7443F8932293CDD0000AF3CC /* MDConfigManager.m */,
+				7443F8952293CDD0000AF3CC /* MDCycriptManager.h */,
+				7443F8972293CDD0000AF3CC /* MDCycriptManager.m */,
+				7443F8992293CDD0000AF3CC /* MDMethodTrace.h */,
+				7443F89B2293CDD0000AF3CC /* MDMethodTrace.m */,
+				7443F89D2293CDD0000AF3CC /* ANYMethodLog.h */,
+				7443F89F2293CDD0000AF3CC /* ANYMethodLog.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		7443F8A12293CDD0000AF3CC /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				7443F8A22293CDD0000AF3CC /* LLDBTools.h */,
+				7443F8A42293CDD0000AF3CC /* LLDBTools.mm */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		7443F8A62293CDD0000AF3CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7443F8A72293CDD0000AF3CC /* ZXBlockLogHookDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7443F8A82293CDD0000AF3CC /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				7443F8A92293CDD0000AF3CC /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		7443F8AB2293CDD0000AF3CC /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				7443F8AC2293CDD0000AF3CC /* fishhook.c */,
+				7443F8AE2293CDD0000AF3CC /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+		7443F8BC2293CE5F000AF3CC /* ZXBlockLog */ = {
+			isa = PBXGroup;
+			children = (
+				7443F8C22293CE5F000AF3CC /* ZXBlockLog.h */,
+				7443F8BD2293CE5F000AF3CC /* ZXBlockLog.m */,
+				7443F8C12293CE5F000AF3CC /* CTBlockDescription.h */,
+				7443F8BE2293CE5F000AF3CC /* CTBlockDescription.m */,
+				7443F8BF2293CE5F000AF3CC /* ZXBlockLogTool.h */,
+				7443F8C32293CE5F000AF3CC /* ZXBlockLogTool.m */,
+				7443F8C02293CE5F000AF3CC /* ZXBlockLogResult.h */,
+				7443F8C42293CE5F000AF3CC /* ZXBlockLogResult.m */,
+			);
+			path = ZXBlockLog;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7443F87E2293CDCF000AF3CC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7443F8962293CDD0000AF3CC /* MDCycriptManager.h in Headers */,
+				7443F89A2293CDD0000AF3CC /* MDMethodTrace.h in Headers */,
+				7443F8A32293CDD0000AF3CC /* LLDBTools.h in Headers */,
+				7443F8C82293CE60000AF3CC /* ZXBlockLogResult.h in Headers */,
+				7443F8CA2293CE60000AF3CC /* ZXBlockLog.h in Headers */,
+				7443F8C92293CE60000AF3CC /* CTBlockDescription.h in Headers */,
+				7443F8C72293CE60000AF3CC /* ZXBlockLogTool.h in Headers */,
+				7443F8922293CDD0000AF3CC /* MDConfigManager.h in Headers */,
+				7443F89E2293CDD0000AF3CC /* ANYMethodLog.h in Headers */,
+				7443F8B12293CDD0000AF3CC /* ZXBlockLogHookDylib.h in Headers */,
+				7443F8AF2293CDD0000AF3CC /* fishhook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7443F86D2293CDCE000AF3CC /* ZXBlockLogHook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7443F8B92293CDD0000AF3CC /* Build configuration list for PBXNativeTarget "ZXBlockLogHook" */;
+			buildPhases = (
+				7443F8672293CDCE000AF3CC /* Sources */,
+				7443F8682293CDCE000AF3CC /* Frameworks */,
+				7443F8692293CDCE000AF3CC /* ShellScript */,
+				7443F86A2293CDCE000AF3CC /* Resources */,
+				7443F86B2293CDCE000AF3CC /* CopyFiles */,
+				7443F86C2293CDCE000AF3CC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7443F8832293CDCF000AF3CC /* PBXTargetDependency */,
+			);
+			name = ZXBlockLogHook;
+			productName = ZXBlockLogHook;
+			productReference = 7443F86E2293CDCE000AF3CC /* ZXBlockLogHook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7443F87F2293CDCF000AF3CC /* ZXBlockLogHookDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7443F8B62293CDD0000AF3CC /* Build configuration list for PBXNativeTarget "ZXBlockLogHookDylib" */;
+			buildPhases = (
+				7443F87B2293CDCF000AF3CC /* ShellScript */,
+				7443F87C2293CDCF000AF3CC /* Sources */,
+				7443F87D2293CDCF000AF3CC /* Frameworks */,
+				7443F87E2293CDCF000AF3CC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZXBlockLogHookDylib;
+			productName = ZXBlockLogHookDylib;
+			productReference = 7443F8802293CDCF000AF3CC /* libZXBlockLogHookDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7443F8632293CDCE000AF3CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "李兆祥";
+				TargetAttributes = {
+					7443F86D2293CDCE000AF3CC = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					7443F87F2293CDCF000AF3CC = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = 7443F8662293CDCE000AF3CC /* Build configuration list for PBXProject "ZXBlockLogHook" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7443F8622293CDCE000AF3CC;
+			productRefGroup = 7443F86F2293CDCE000AF3CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7443F86D2293CDCE000AF3CC /* ZXBlockLogHook */,
+				7443F87F2293CDCF000AF3CC /* ZXBlockLogHookDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7443F86A2293CDCE000AF3CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7443F8772293CDCE000AF3CC /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7443F8692293CDCE000AF3CC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		7443F86C2293CDCE000AF3CC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		7443F87B2293CDCF000AF3CC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7443F8672293CDCE000AF3CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7443F87C2293CDCF000AF3CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7443F8CB2293CE60000AF3CC /* ZXBlockLogTool.m in Sources */,
+				7443F8982293CDD0000AF3CC /* MDCycriptManager.m in Sources */,
+				7443F8CC2293CE60000AF3CC /* ZXBlockLogResult.m in Sources */,
+				7443F8A02293CDD0000AF3CC /* ANYMethodLog.m in Sources */,
+				7443F8B32293CDD0000AF3CC /* ZXBlockLogHookDylib.m in Sources */,
+				7443F8942293CDD0000AF3CC /* MDConfigManager.m in Sources */,
+				7443F8A52293CDD0000AF3CC /* LLDBTools.mm in Sources */,
+				7443F8C62293CE60000AF3CC /* CTBlockDescription.m in Sources */,
+				7443F88F2293CDD0000AF3CC /* ZXBlockLogHookDylib.mm in Sources */,
+				7443F89C2293CDD0000AF3CC /* MDMethodTrace.m in Sources */,
+				7443F8AD2293CDD0000AF3CC /* fishhook.c in Sources */,
+				7443F8C52293CE60000AF3CC /* ZXBlockLog.m in Sources */,
+				7443F8AA2293CDD0000AF3CC /* AntiAntiDebug.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7443F8832293CDCF000AF3CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7443F87F2293CDCF000AF3CC /* ZXBlockLogHookDylib */;
+			targetProxy = 7443F8822293CDCF000AF3CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7443F8B42293CDD0000AF3CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7443F8B52293CDD0000AF3CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7443F8B72293CDD0000AF3CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XW95KAQH96;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZXBlockLogHookDylib/ZXBlockLogHookDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libZXBlockLogHookDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"ZXBlockLogHookDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		7443F8B82293CDD0000AF3CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = XW95KAQH96;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZXBlockLogHookDylib/ZXBlockLogHookDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libZXBlockLogHookDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"ZXBlockLogHookDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7443F8BA2293CDD0000AF3CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XW95KAQH96;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ZXBlockLogHook/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.zxlee.ZXBlockLogHook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7443F8BB2293CDD0000AF3CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XW95KAQH96;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ZXBlockLogHook/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.zxlee.ZXBlockLogHook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7443F8662293CDCE000AF3CC /* Build configuration list for PBXProject "ZXBlockLogHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7443F8B42293CDD0000AF3CC /* Debug */,
+				7443F8B52293CDD0000AF3CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7443F8B62293CDD0000AF3CC /* Build configuration list for PBXNativeTarget "ZXBlockLogHookDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7443F8B72293CDD0000AF3CC /* Debug */,
+				7443F8B82293CDD0000AF3CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7443F8B92293CDD0000AF3CC /* Build configuration list for PBXNativeTarget "ZXBlockLogHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7443F8BA2293CDD0000AF3CC /* Debug */,
+				7443F8BB2293CDD0000AF3CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7443F8632293CDCE000AF3CC /* Project object */;
+}
