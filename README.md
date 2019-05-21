@@ -29,7 +29,7 @@ NSLog(ZXBlockLog(block));
 ```
 由于class-dump无法解析block，因此显示为CDUnknownBlockType
 
-* 编写tweak，hook HttpRequest的+ (void)sendRequestWithData:(id)arg1 callBack:(CDUnknownBlockType)arg2函数
+* 编写tweak，hook HttpRequest的+ (void)sendRequestWithData:(id)arg1 callBack:(CDUnknownBlockType)arg2方法
 ```objective-c
 #import <UIKit/UIKit.h>
 #import "ZXBlockLog.h"
@@ -114,7 +114,7 @@ NSLog(ZXBlockLog(block));
 * 查看效果
 <img src="http://www.zxlee.cn/blocklogdemo/blocklogdemo4.gif"/>
 
-#### 至此，我们达到了捕获block内部参数并修改的目的，block返回值处理亦然
+#### 至此，我们达到了捕获block内部参数并修改的目的
 
 
 
