@@ -33,7 +33,6 @@ NSLog(ZXBlockLog(block));
 ```objective-c
 #import <UIKit/UIKit.h>
 #import "ZXBlockLog.h"
-%hook HttpRequest
 //block的本质是结构体，此处CDUnknownBlockType修改id类型即可
 %hook HttpRequest
 + (void)sendRequestWithData:(id)arg1 callBack:(id)arg2{
@@ -54,7 +53,6 @@ NSLog(ZXBlockLog(block));
 #import <UIKit/UIKit.h>
 #import "ZXBlockLog.h"
 @class HttpResponse;
-%hook HttpRequest
 %hook HttpRequest
 + (void)sendRequestWithData:(id)arg1 callBack:(void(^)(BOOL,HttpResponse *))arg2{
     %orig;
