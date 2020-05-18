@@ -42,11 +42,13 @@ NSLog(ZXBlockLog(block));
 }
 %end
 ```
-* 查看打印结果，[Declare]可以认为是block的声明写法，[Imple]可以认为是block的实现写法，此处打印出来可以省去重新写的时间
+* 查看打印结果，`[Block声明]`可以认为是block的声明写法，`[Block实现]`可以认为是block的实现写法，此处打印出来可以省去重新写的时间
 ```c
 2019-05-21 21:53:33.281180+0800 ZXBlockLogDemo[62025:5648976] 
-[Declare]void(^)(BOOL,HttpResponse *)
-[Imple]^void(BOOL arg1,HttpResponse *arg2)
+----------------------[ZXBlockLogStart]----------------------
+[Block声明]int(^)(int)
+[Block实现]^int(int arg1)
+-----------------------[ZXBlockLogEnd]-----------------------
 ```
 * 现在我们清楚了block的内部构造，这个block的返回值是void，有BOOL和HttpResponse两个参数类型，开始恢复block，直接复制[Declare]代替原位置的id即可
 ```objective-c
