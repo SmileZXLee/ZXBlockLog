@@ -595,7 +595,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XW95KAQH96;
+				DEVELOPMENT_TEAM = TG939996RJ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_BITCODE = NO;
@@ -657,7 +657,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
-				DEVELOPMENT_TEAM = XW95KAQH96;
+				DEVELOPMENT_TEAM = TG939996RJ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_BITCODE = NO;
@@ -713,7 +713,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XW95KAQH96;
+				DEVELOPMENT_TEAM = TG939996RJ;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ZXBlockLogHook/Info.plist;
 				MONKEYDEV_ADD_SUBSTRATE = YES;
@@ -734,7 +734,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XW95KAQH96;
+				DEVELOPMENT_TEAM = TG939996RJ;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ZXBlockLogHook/Info.plist;
 				MONKEYDEV_ADD_SUBSTRATE = YES;

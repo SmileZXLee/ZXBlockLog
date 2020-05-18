@@ -8,7 +8,12 @@
 
 %hook HttpRequest
 
-+ (void)sendRequestWithData:(id)arg1 callBack:(void(^)(BOOL,HttpResponse *))arg2{
++ (void)sendRequestWithData:(id)arg1 callBack:(id)arg2{
+    int(^kGetDataEventHandler) (int a) = ^int(int a){
+        return 123;
+    };
+    NSLog(ZXBlockLog(kGetDataEventHandler));
+    /*
     arg2 = ^void(BOOL arg3,HttpResponse *arg4) {
         Class cls = NSClassFromString(@"HttpResponse");
         id resp = [cls new];
@@ -16,6 +21,7 @@
         [resp setValue:[NSString stringWithFormat:@"[hooked]%@",[arg4 valueForKey:@"data"]]forKey:@"data"];
         arg2(YES,resp);
     };
+     */
     %orig;
     
 }
