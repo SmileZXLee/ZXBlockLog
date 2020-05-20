@@ -50,7 +50,7 @@ NSLog(ZXBlockLog(block));
 [Block实现]^void(BOOL arg1,HttpResponse *arg2)
 -----------------------[ZXBlockLogEnd]-----------------------
 ```
-* 现在我们清楚了block的内部构造，这个block的返回值是void，有BOOL和HttpResponse两个参数类型，开始恢复block，直接复制[Declare]代替原位置的id即可
+* 现在我们清楚了block的内部构造，这个block的返回值是void，有BOOL和HttpResponse两个参数类型，开始恢复block，直接复制[Block声明]后的代码代替原位置的id即可
 ```objective-c
 #import <UIKit/UIKit.h>
 #import "ZXBlockLog.h"
