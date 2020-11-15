@@ -42,13 +42,15 @@ NSLog(ZXBlockLog(block));
 }
 %end
 ```
-* 查看打印结果，[Declare]可以认为是block的声明写法，[Imple]可以认为是block的实现写法，此处打印出来可以省去重新写的时间
+* 查看打印结果，`[Block声明]`可以认为是block的声明写法，`[Block实现]`可以认为是block的实现写法，此处打印出来可以省去重新写的时间
 ```c
 2019-05-21 21:53:33.281180+0800 ZXBlockLogDemo[62025:5648976] 
-[Declare]void(^)(BOOL,HttpResponse *)
-[Imple]^void(BOOL arg1,HttpResponse *arg2)
+----------------------[ZXBlockLogStart]----------------------
+[Block声明]void(^)(BOOL,HttpResponse *)
+[Block实现]^void(BOOL arg1,HttpResponse *arg2)
+-----------------------[ZXBlockLogEnd]-----------------------
 ```
-* 现在我们清楚了block的内部构造，这个block的返回值是void，有BOOL和HttpResponse两个参数类型，开始恢复block，直接复制[Declare]代替原位置的id即可
+* 现在我们清楚了block的内部构造，这个block的返回值是void，有BOOL和HttpResponse两个参数类型，开始恢复block，直接复制[Block声明]后的代码代替原位置的id即可
 ```objective-c
 #import <UIKit/UIKit.h>
 #import "ZXBlockLog.h"
@@ -91,7 +93,7 @@ NSLog(ZXBlockLog(block));
 * 查看效果
 <img src="http://www.zxlee.cn/blocklogdemo/blocklogdemo3.gif"/>
 
-* 继续完善，若需要在原先的响应信息的前面加上"[hooked]",直接复制[Impl]即为block实现的写法，我们实现这个block，并在block的实现中获取%orig中原block传递进来的参数，拼接之后传给arg2，达到修改block参数的目的，block的调用实质是调用block指向的函数地址对应的函数，并传递相关参数。
+* 继续完善，若需要在原先的响应信息的前面加上"[hooked]"字符串,直接复制`[Block实现]`即为block实现的写法，我们实现这个block，并在block的实现中获取%orig中原block传递进来的参数，拼接之后传给arg2，达到修改block参数的目的，block的调用实质是调用block指向的函数地址对应的函数，并传递相关参数。
 ```objective-c
 @interface HttpResponse : NSObject
 
@@ -113,7 +115,6 @@ NSLog(ZXBlockLog(block));
 <img src="http://www.zxlee.cn/blocklogdemo/blocklogdemo4.gif"/>
 
 #### 至此，我们达到了捕获block内部参数并修改的目的
-
 
 
 

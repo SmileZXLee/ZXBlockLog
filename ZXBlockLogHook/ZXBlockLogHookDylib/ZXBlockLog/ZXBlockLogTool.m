@@ -16,10 +16,14 @@
     if([typeMapperDic.allKeys containsObject:typeStr]){
         return typeMapperDic[typeStr];
     }
-    NSLog(@"typeStr1--%@",typeStr);
     NSRange typeRange = [typeStr rangeOfString:@"\".*?\"" options:NSRegularExpressionSearch];
     if(typeRange.location == NSNotFound){
-        return [NSString stringWithFormat:@"[变量类型识别失败，原类型为]%@",typeStr];
+        if([typeStr hasPrefix:@"T@"]){
+            return @"id";
+        }else{
+            return [NSString stringWithFormat:@"[变量类型识别失败，原类型为]%@",typeStr];
+        }
+        
     }
     NSString *resTypeStr = [typeStr substringWithRange:typeRange];
     resTypeStr = [[resTypeStr stringByReplacingOccurrencesOfString:@"\"" withString:@""]stringByAppendingString:@" *"];

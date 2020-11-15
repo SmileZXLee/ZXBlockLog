@@ -35,7 +35,7 @@ static void (*_logos_meta_orig$_ungrouped$HttpRequest$sendRequestWithData$callBa
 
 
 static void _logos_meta_method$_ungrouped$HttpRequest$sendRequestWithData$callBack$(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST __unused self, SEL __unused _cmd, id arg1, id arg2){
-    int(^kGetDataEventHandler) (int a) = ^int(int a){
+    int(^kGetDataEventHandler) (NSString *a) = ^int(NSString *a){
         return 123;
     };
     NSLog(ZXBlockLog(kGetDataEventHandler));
