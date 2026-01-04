@@ -1,4 +1,7 @@
 # ZXBlockLog
+### 前言
+* 此项目归属于[ZXHookDetection](https://github.com/SmileZXLee/iOSSignatureAnalysis)，仅限用于帮助iOS开发者从攻击者角度分析自己的应用，从而可以对自己的应用进行针对性的防护和检测，禁止用于任何其他用途！！！
+  
 ### 基于[CTObjectiveCRuntimeAdditions](https://github.com/ebf/CTObjectiveCRuntimeAdditions)
 ### 如何使用
 * 导入ZXBlockLog
